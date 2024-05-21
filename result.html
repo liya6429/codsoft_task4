@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+            font-size: larger;
+        }
+        a{
+            background-color: darkgreen;
+            color: white;
+            text-decoration: none;
+            font-size: larger;
+            padding: 10px 10px 10px 10px;
+            margin-left: 45%;
+        }
+    </style>
+</head>
+<body>
+    &nbsp<h2>RESULT</h2>
+    <h3>User Choice : {{ user_choice }}</h3>
+    <h3>Computer Choice : {{ computer_choice }}</h3>
+    <h3>{{ result }}</h3><br>
+    <a href="{% url 'home' %}">Play Again</a>
+
+</body>
+</html>
